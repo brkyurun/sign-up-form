@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+}
+
+.image-colon-left {
+  height: 100vh;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  background-image: url(./img/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
+}
+
+.colon-logo {
+  height: 100px;
+  width: 30vw;
+  margin-top: 10rem;
+  margin-bottom: 33rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  text-align: center;
+  color: azure;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
+}
+
+.colon-credit,
+.colon-credit a {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: azure;
+}
+
+main {
+  font-family: "Source Sans Pro", sans-serif;
+}
+.main-cta-container {
+  height: 30vh;
+  padding: 0 50px 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  background-color: royalblue;
+}
+
+.main-cta-container p {
+  font-size: 18px;
+}
+
+.main-form {
+  background-color: dodgerblue;
+  height: 40vh;
+}
+
+.form-elements-container {
+}
+
+.form-element {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element > input {
+  width: 150px;
+}
+main > p {
+  height: 30vh;
+  background-color: bisque;
+}
+
+/* Utilities */
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
