@@ -1,6 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap");
 
+:root {
+  --cta-text: rgb(82, 82, 91);
+  --cta-bg: rgb(248, 250, 252);
+  --form-text: rgb(82, 82, 91);
+  --form-bg: rgb(248, 250, 252);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,74 +18,170 @@ body {
   display: flex;
 }
 
-.image-colon-left {
+.colon-left {
   height: 100vh;
   width: 30vw;
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   background-image: url(./img/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg);
+}
+
+.container {
+  height: calc(100vh - 5rem);
+  width: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.c-credit {
+  display: flex;
+  align-items: flex-end;
 }
 
 .colon-logo {
   height: 100px;
-  width: 30vw;
-  margin-top: 10rem;
-  margin-bottom: 33rem;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.3);
-  text-align: center;
   color: azure;
   font-family: "Poppins", sans-serif;
   font-size: 3.5rem;
 }
 
-.colon-credit,
-.colon-credit a {
-  text-align: center;
+.colon-credit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: "Poppins", sans-serif;
   color: azure;
+}
+
+.colon-credit a {
+  text-decoration: none;
+  color: inherit;
+  transition: color ease-out 0.5s;
+}
+
+.colon-credit a:hover {
+  color: rgba(0, 0, 0, 0.9);
 }
 
 main {
   font-family: "Source Sans Pro", sans-serif;
 }
+
 .main-cta-container {
-  height: 30vh;
+  height: 28vh;
   padding: 0 50px 0 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  background-color: royalblue;
+  background-color: var(--cta-bg);
+  color: var(--cta-text);
 }
 
 .main-cta-container p {
-  font-size: 18px;
+  font-size: 1.3rem;
 }
 
 .main-form {
-  background-color: dodgerblue;
-  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--form-bg);
+  height: 43vh;
+}
+
+.main-form h2 {
+  padding: 10px 0px;
+  color: var(--form-text);
+}
+
+.main-form label {
+  color: var(--form-text);
 }
 
 .form-elements-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 10px 100px;
 }
 
 .form-element {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+  font-size: 1.1rem;
 }
 
 .form-element > input {
   width: 150px;
-}
-main > p {
-  height: 30vh;
-  background-color: bisque;
+  height: 1.5rem;
+  padding: 3px 7px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(184, 180, 180, 0.9);
+  box-shadow: 0px 0.5px 5px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
-/* Utilities */
+.form-element > input:focus {
+  outline: 1.5px solid rgb(56, 189, 248);
+  box-shadow: 0px 1px 8px rgba(56, 189, 248);
+}
 
-.row {
+.form-submit-container {
+  grid-column-start: span 2;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-submit-container button {
+  width: auto;
+  height: 50px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(56, 189, 248);
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 3px;
+  transition: all ease 0.45s;
+}
+
+.form-submit-container button:hover {
+  border-radius: 8px;
+  transform: scale(1.04);
+  background-color: rgb(52, 211, 153);
+}
+
+.query {
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(241 245 249);
+  color: var(--form-text);
+  font-size: 1.2rem;
+}
+
+.query a {
+  text-decoration: none;
+  color: var(--form-text);
+  border-bottom: 2px solid rgb(82, 82, 91);
+  transition: all ease-out 0.1s;
+}
+
+.query a:hover {
+  color: rgb(56, 189, 248);
+  border-bottom: 2px solid rgb(56, 189, 248);
 }

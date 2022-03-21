@@ -8,23 +8,27 @@
     <title>Sign-up</title>
   </head>
   <body>
-    <aside class="image-colon-left">
-      <div class="colon-logo">
-        <p class="logo-text">Splotch</p>
+    <aside class="colon-left">
+      <div class="container">
+        <div class="colon-logo">
+          <p class="logo-text">Splotch</p>
+        </div>
       </div>
-      <div class="colon-credit">
-        <p>
-          Photo by
-          <a
-            href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Pawel Czerwinski</a
-          >
-          on
-          <a
-            href="https://unsplash.com/s/photos/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-            >Unsplash</a
-          >
-        </p>
+      <div class="container c-credit">
+        <div class="colon-credit">
+          <p>
+            Photo by
+            <a
+              href="https://unsplash.com/@pawel_czerwinski?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Pawel Czerwinski</a
+            >
+            on
+            <a
+              href="https://unsplash.com/s/photos/abstract?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              >Unsplash</a
+            >
+          </p>
+        </div>
       </div>
     </aside>
     <main>
@@ -51,6 +55,7 @@
               id="first_name"
               class="form-field"
               name="first_name"
+              required
             />
           </div>
           <div class="last-name form-element">
@@ -60,6 +65,7 @@
               id="last_name"
               class="form-field"
               name="last_name"
+              required
             />
           </div>
           <div class="user-mail form-element">
@@ -69,6 +75,7 @@
               id="user_email"
               class="form-field"
               name="user_email"
+              required
             />
           </div>
           <div class="user-phone form-element">
@@ -79,6 +86,7 @@
               class="form-field"
               name="user_phone"
               placeholder="+90 (555) 111 22 33"
+              required
             />
           </div>
           <div class="user-password form-element">
@@ -88,6 +96,7 @@
               id="user_password"
               class="form-field"
               name="user_password"
+              required
             />
           </div>
           <div class="user-password-confirm form-element">
@@ -97,6 +106,7 @@
               id="user_password_confirm"
               class="form-field"
               name="user_password_confirm"
+              required
             />
           </div>
           <div class="form-submit-container">
@@ -104,7 +114,9 @@
           </div>
         </div>
       </form>
-      <p>Already have an account? <a href="#">Log in</a></p>
+      <div class="query">
+        <p>Already have an account? <a href="#">Log in</a></p>
+      </div>
     </main>
   </body>
 </html>
